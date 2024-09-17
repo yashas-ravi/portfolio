@@ -1,0 +1,39 @@
+@import '../../var.css';
+
+.Skill{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    background-color: var(--bg-color);
+}
+
+.colorBox3{
+    position: absolute;
+    bottom: 2vh;
+    left: 2vw;
+    width: 40vw;
+    height: 70vh;
+    background-color: #2d285e86;
+    border-radius: 100%;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.colorBox4{
+    position: absolute;
+    top: 5vh;
+    right: 2vw;
+    background-color: #75245e86;
+    width: 40vw;
+    height: 70vh;
+    border-radius: 100%;
+    filter:blur(100px);
+    z-index: 0;
+}
+
+.skillBox{
+    position: relative;
+    width: 40vw;
+    height: 40vh;
+}

@@ -1,0 +1,14 @@
+:root{
+    /* Colors */
+    --white-text: #f0eaea;
+    --black-text: rgb(140, 138, 138);
+    --primary-color: rgb(228, 253, 4);
+    --secondary-color: #be56ff;
+    --accent-color: rgb(179, 174, 174);
+    --bg-color: #130213;
+
+    /* Sizes */
+    --small-font: 1em;
+    --medium-font: 1.5em; 
+    --large-font: 2.5em;
+}
