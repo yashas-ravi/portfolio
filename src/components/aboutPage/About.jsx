@@ -13,7 +13,7 @@ export const About = () => {
             </div>
             <div className={styles.colorBox1}></div>
             <div className={styles.colorBox2}></div>
-            <div className={styles.helloText}>Hello World Hello World Hello World Hello World</div>
+            <div className={styles.helloText}>Hello World Hello World Hello World Hello World hello world</div>
         </section>
     );
 }

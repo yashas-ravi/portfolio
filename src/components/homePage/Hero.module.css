@@ -1,4 +1,5 @@
 @import "../../var.css";
+@import '../../index.css';
 
 .Hero{
     position: relative;
@@ -81,6 +82,7 @@ span::after{
     content: "";
     padding: 5px;
     color: var(--white-text);
+    font-family: "m plus code latin";
     font-size: var(--medium-font);
     font-weight: 500;
     animation: text 4s linear infinite;
@@ -97,6 +99,7 @@ span::after{
     display: flex;
     flex-direction: row;
     column-gap: 50px;
+    z-index: 100;
 }
 
 button{

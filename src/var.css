@@ -6,9 +6,11 @@
     --secondary-color: #8923c9;
     --accent-color: rgb(179, 174, 174);
     --bg-color: #130213;
+    --blue-light:#2d285e86;
+    --pink-light:#75245e86;
 
     /* Sizes */
     --small-font: 1em;
-    --medium-font: 1.5em; 
+    --medium-font: 1.3em; 
     --large-font: 2.5em;
 }

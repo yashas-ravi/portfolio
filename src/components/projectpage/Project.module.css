@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     background-color: var(--bg-color);
+    font-size: 15px;
 }
 
 .colorBox5{
@@ -16,7 +17,7 @@
     left: 2vw;
     width: 40vw;
     height: 70vh;
-    background-color: #2d285e86;
+    background-color: var(--blue-light);
     border-radius: 100%;
     filter: blur(100px);
     z-index: 0;
@@ -26,7 +27,7 @@
     position: absolute;
     bottom: 8vh;
     right: 2vw;
-    background-color: #75245e86;
+    background-color: var(--pink-light);
     width: 40vw;
     height: 70vh;
     border-radius: 100%;
