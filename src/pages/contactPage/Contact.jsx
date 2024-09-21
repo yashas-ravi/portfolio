@@ -1,9 +1,8 @@
 import styles from './Contact.module.css';
 import contactImg from '../../assets/contactImg.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import instagram from '../../assets/instagram-brands-solid.svg';
+import github from '../../assets/github-brands-solid.svg';
+import linkedIn from '../../assets/linkedin-brands-solid.svg';  
 
 export const Contact = () => {
 
@@ -44,9 +43,9 @@ export const Contact = () => {
             </div>
             <h3>Let's connect</h3>
             <div className={styles.socialApps}>
-                <a href="https://www.instagram.com/mr____yashas_"><FontAwesomeIcon icon={faInstagram}/></a>
-                <a href=""><FontAwesomeIcon icon={faLinkedin}/></a>
-                <a href=""><FontAwesomeIcon icon={faGithub}/></a>
+                <a href=""><img src={github} alt="img" className={styles.appIcons} /></a>
+                <a href=""><img src={linkedIn} alt="img" className={styles.appIcons} /></a>
+                <a href="https://www.instagram.com/mr____yashas_"><img src={instagram} alt="img" className={styles.appIcons} /></a>
             </div>
          </div>
        </section>

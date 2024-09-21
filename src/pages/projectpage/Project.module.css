@@ -1,0 +1,139 @@
+@import '../../var.css';
+
+.project{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-color);
+    font-size: 15px;
+}
+
+.colorBox5{
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--blue-light);
+    border-radius: 100%;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.colorBox6{
+    position: absolute;
+    bottom: 8vh;
+    right: 2vw;
+    background-color: var(--pink-light);
+    width: 40vw;
+    height: 70vh;
+    border-radius: 100%;
+    filter:blur(100px);
+    z-index: 0;
+}
+
+.projectBox{
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    border-top: 5px solid rgba(139, 138, 138, 0.552);
+    border-bottom: 5px solid rgba(139, 138, 138, 0.556);
+    z-index: 100;
+}
+
+.projText{
+    position: absolute;
+    top: -30px;
+    left: 45%;
+    padding: 5px;
+    font-size: var(--medium-font);
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.arrowLeft{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    width: 40px;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.arrowRight{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    width: 40px;
+    height: auto;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.cardSlider{
+    position: absolute;
+    top: 8%;
+    left: 19%;
+    width: 50vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.cardItem{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20vw;
+    height: 50vh;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(139, 138, 138, 0.556);
+    border-radius: 15px;
+    z-index: 50;
+}
+
+.cardItem h3{
+    color: var(--primary-color);
+}
+
+.viewArea{
+    position: relative;
+    width: 80vw;
+    height: 68.5vh;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0)50%, rgb(0, 0, 0)50%);
+    z-index: 100;
+}
+
+.viewArea::before{
+    position: absolute;
+    top: 0;
+    left: 18vw;
+    content: "";
+    width: 15vw;
+    height:68.5vh;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.1)5%, rgb(0, 0, 0)95%);
+}
+
+.viewArea::after{
+    position: absolute;
+    top: 0;
+    right: 18vw;
+    content: "";
+    width: 15vw;
+    height:68.5vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1)5%, rgb(0, 0, 0)95%);
+}

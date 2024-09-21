@@ -1,8 +1,8 @@
-import Home from './components/homePage/Home';
-import {About} from './components/aboutPage/About';
-import {Skill} from './components/skillPage/Skill';
-import {Project} from './components/projectpage/Project';
-import {Contact} from './components/contactPage/Contact';
+import Home from './pages/homePage/Home';
+import {About} from './pages/aboutPage/About';
+import {Skill} from './pages/skillPage/Skill';
+import {Project} from './pages/projectpage/Project';
+import {Contact} from './pages/contactPage/Contact';
 import styles from './App.module.css';
 
 function App(){
