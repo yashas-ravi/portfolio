@@ -75,7 +75,7 @@
     padding: 5px;
     margin: 10px;
     color: var(--black-text);
-    border: 1px solid rgba(139, 138, 138, 0.556);
+    border: 1.5px solid rgba(139, 138, 138, 0.556);
     background-color: rgba(0, 0, 0, 0.4);
     font-size: var(--small-font);
     font-weight: 600;
@@ -86,9 +86,31 @@
     height: 20vh;
 }
 
+.formBox h3{
+    font-size: 15px;
+    background-color: rgba(6, 121, 18, 0.533);
+    color: rgb(19, 189, 19);
+    font-weight: 500;
+}
+
+.formBox h2{
+    font-size: 15px;
+    background-color: rgba(104, 23, 23, 0.503);
+    color: rgb(246, 93, 51);
+    font-weight: 500;
+}
+
 .formBox button{
     width: 100px;
     margin-top: 5vh;
+    color: var(--white-text);
+    font-weight: 600;
+    cursor: pointer;
+    height: 35px;
+    padding: 5px;
+    background-color: rgba(251, 0, 251, 0.2);
+    border: 2px solid var(--secondary-color);
+    border-radius: 50px;
 }
 
 .socialBox{
@@ -129,9 +151,89 @@
     color: var(--white-text);
 }
 
-.appIcons{
-    width: 45px;
-    height: auto;
+.socialApps i{
+    font-size: 25px;
     padding: 10px;
-    margin: 5px;
+    color: var(--accent-color);
+}
+
+@media only screen and (max-width:470px){
+
+.contact{
+    height: 120vh;
+    font-size: 15px;
+    flex-direction: column;
+    align-items: center;   
+    justify-content: center;
+}
+
+.colorBox7{
+    position: absolute;
+    bottom: 5vh;
+    left: 2vw;
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--blue-light);
+    border-radius: 100%;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.colorBox8{
+    position: absolute;
+    top: 8vh;
+    right: 2vw;
+    background-color: var(--pink-light);
+    width: 40vw;
+    height: 70vh;
+    border-radius: 100%;
+    filter:blur(100px);
+    z-index: 0;
+}
+
+.contactForm{
+    position: relative;
+    margin-left: 0;
+    padding: 80px 10px 10px 10px;
+    width: 80%;
+    height: 60vh;
+}
+
+.conText{
+    position: absolute;
+    top: -20px;
+    left: 10vw;
+    font-size: var(--small-font);
+}
+
+.formBox input[type=text], input[type=email], textarea{
+    width: 250px;
+    height: 40px;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid rgba(139, 138, 138, 0.556);
+}
+
+.socialBox{
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    padding-top: 100px;
+}
+
+.socialApps i{
+    font-size: 20px;
+}
+
+.contImgBox img{
+    width: 40vw;
+    height: auto;
+}
+
+.contImgBox::after{
+    top: -5vh;
+    left: 20vw;
+    width: 150px;
+}
+
 }

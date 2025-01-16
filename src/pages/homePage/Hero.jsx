@@ -11,10 +11,10 @@ export const Hero = () => {
             <div className={styles.textbox}><p className={styles.p1}>A passionate computer science student <br />based in Karnataka, India.</p></div>
             <div className={styles.buttonBox}>
                <button className={styles.button}>
-                    Let's connect
+                    <a href="#contact">Let's connect</a>
                 </button>
                 <button>
-                    See projects
+                    <a href="#project">See projects</a>
                 </button>
             </div>
         </div>

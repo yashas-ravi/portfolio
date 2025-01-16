@@ -39,8 +39,8 @@
     position: relative;
     width: 80vw;
     height: 70vh;
-    border-top: 5px solid rgba(139, 138, 138, 0.552);
-    border-bottom: 5px solid rgba(139, 138, 138, 0.556);
+    border-top: 5px solid rgba(139, 138, 138, 0.252);
+    border-bottom: 5px solid rgba(139, 138, 138, 0.256);
     z-index: 100;
 }
 
@@ -84,11 +84,20 @@
     width: 50vw;
     height: 60vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardHolder{
+    position: relative;
+    width: 30%;
+    height: 100%;
+    display: flex;
     flex-direction: row;
     column-gap: 30px;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 .cardItem{
@@ -96,17 +105,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 20vw;
-    height: 50vh;
+    justify-content: flex-start;
+    width: 100%;
+    height: 80%;
     padding: 15px;
     background-color: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(139, 138, 138, 0.556);
+    border: 2px solid rgba(139, 138, 138, 0.556);
     border-radius: 15px;
     z-index: 50;
 }
 
+.cardItem img{
+    width: 150px;
+    height: 150px;
+}
+
+.cardItem p{
+    font-size: var(--small-font);
+    color: var(--white-text);
+    padding-top: 10px;
+    font-weight: 500;
+}
+
+.cardItem a{
+    color: rgb(10, 93, 177);
+    font-size: var(--small-font);
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .cardItem h3{
+    padding-top: 10px;
     color: var(--primary-color);
 }
 
@@ -116,6 +145,7 @@
     height: 68.5vh;
     background-image: radial-gradient(circle, rgba(0, 0, 0, 0)50%, rgb(0, 0, 0)50%);
     z-index: 100;
+    pointer-events: none;
 }
 
 .viewArea::before{
@@ -136,4 +166,106 @@
     width: 15vw;
     height:68.5vh;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1)5%, rgb(0, 0, 0)95%);
+}
+
+@media only screen and (max-width:470px){
+
+.project{
+    height: 80vh;
+    font-size: 10px;
+}
+
+.colorBox5{
+    position: absolute;
+    top: 5vh;
+    left: 2vw;
+    width: 40vw;
+    height: 70vh;
+    background-color: var(--blue-light);
+    border-radius: 100%;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.colorBox6{
+    position: absolute;
+    bottom: 8vh;
+    right: 2vw;
+    background-color: var(--pink-light);
+    width: 40vw;
+    height: 70vh;
+    border-radius: 100%;
+    filter:blur(100px);
+    z-index: 0;
+}
+
+.projectBox{
+    position: relative;
+    width: 100%;
+    height: 60vh;
+}
+
+.projText{
+    top: -30px;
+    left: 35vw;
+    font-size: var(--medium-font);
+}
+
+.arrowLeft{
+    left: 5vw;
+    width: 30px;
+}
+
+.arrowRight{
+    right: 5vw;
+    width: 30px;
+}
+
+.cardSlider{
+    top: 15vh;
+    left: 0vw;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardHolder{
+    width: 50%;
+    height: 100%;
+}
+
+.cardItem{
+    height: 100%;
+}
+
+.cardItem img{
+    width: 50px;
+    height: 50px;
+}
+
+.cardItem h3{
+    font-size: var(--small-font);
+}
+
+.viewArea{
+    width: 100%;
+    height: 58.8vh;
+}
+
+.viewArea::before{
+    top: 0;
+    left: 10vw;
+    width: 25vw;
+    height:58.8vh;
+}
+
+.viewArea::after{
+    top: 0;
+    right: 10vw;
+    width: 25vw;
+    height:58.8vh;
+}
+
 }

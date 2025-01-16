@@ -3,9 +3,10 @@
 body{
     margin: 0;
     font-family: sans-serif;
+    position: relative;
 }
 
-nav{
+.nav{
     position:relative;
     display: flex;
     flex-direction: row;
@@ -16,7 +17,15 @@ nav{
     z-index: 9;
 }
 
-ul{
+.menuBtn{
+ display: none;
+}
+
+.closeMenu{
+    display: none;
+}
+
+.nav ul{
     width: 60%;
     height: 100%;
     z-index: 10;
@@ -26,17 +35,17 @@ ul{
     column-gap: 50px;
 }
 
-img{
+.nav img{
     width: 100px;
     height: 100px;
     cursor: pointer;
 }
 
-li{
+.ul li{
     list-style: none;
 }
 
-a{
+.ul li a{
     text-decoration: none;
     font-size: var(--medium-font);
     font-weight: 500;
@@ -44,7 +53,62 @@ a{
     padding: 10px;
 }
 
-a:active{
+.ul li a:active{
     color: var(--white-text);
     font-weight: 600;
+}
+
+@media only screen and (max-width:470px){
+
+    .menuBtn{
+        display: block;
+        margin-right: 20px;
+    }
+
+    .menuBtn i{
+        font-size: 30px;
+        color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    .closeMenu{
+        display: block;
+        transform: translate(70px);
+    }
+
+    .closeMenu i{
+        color: var(--accent-color);
+        font-size: var(--medium-font);
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .nav{
+        height: 80px;
+        justify-content: space-between;
+    }    
+    
+    .nav ul{
+        position: absolute;
+        top: 10px;
+        right: 1px;
+        width: 200px;
+        height: 300px;
+        z-index: 10;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        row-gap: 20px;
+        background-color: rgba(36, 8, 46, 0.859);
+        border: 1px solid rgba(215, 201, 201, 0.477);
+        overflow: hidden;
+    }
+    
+    .nav img{
+        width: 80px;
+        height: 80px;
+        margin-left: 10px;
+    } 
 }

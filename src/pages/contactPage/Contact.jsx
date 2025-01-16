@@ -1,31 +1,39 @@
 import styles from './Contact.module.css';
-import contactImg from '../../assets/contactImg.png';
-import instagram from '../../assets/instagram-brands-solid.svg';
-import github from '../../assets/github-brands-solid.svg';
-import linkedIn from '../../assets/linkedin-brands-solid.svg';  
+import contactImg from '../../assets/contactImg.png'; 
+import config from '../../config';
 
 export const Contact = () => {
 
     const onSubmit = async(event)=>{
         event.preventDefault();
         const formData = new FormData(event.target);
-        formData.append("access_key", "");
+        formData.append("access_key", config.web3forms);
 
         const object = Object.fromEntries(formData);
         const json = JSON.stringify(object);
 
         const res = await fetch("https://api.web3forms.com/submit",
              {
-                method: "post",
+                method: "POST",
                 headers:{
                     "content-type":"application/json",
                     Accept:"application/json"
                 },
                 body:json
             }).then((res)=>res.json());
+
+            if(res.success){
+                console.log("success",res)
+                alert("Message sent")
+            }
+            else{
+                console.log(res)
+                alert("message failed")
+            }
     }
+
     return(
-       <section className={styles.contact}>
+       <section id="contact" className={styles.contact}>
          <div className={styles.colorBox7}></div>
          <div className={styles.colorBox8}></div>
          <div className={styles.contactForm}>
@@ -43,9 +51,9 @@ export const Contact = () => {
             </div>
             <h3>Let's connect</h3>
             <div className={styles.socialApps}>
-                <a href=""><img src={github} alt="img" className={styles.appIcons} /></a>
-                <a href=""><img src={linkedIn} alt="img" className={styles.appIcons} /></a>
-                <a href="https://www.instagram.com/mr____yashas_"><img src={instagram} alt="img" className={styles.appIcons} /></a>
+                <a href="https://github.com/yashas-ravi"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/yashas-mr-7b95471b5"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/yashas__mr"><i class="fa-brands fa-instagram"></i></a>
             </div>
          </div>
        </section>

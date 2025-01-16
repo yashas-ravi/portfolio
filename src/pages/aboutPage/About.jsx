@@ -3,7 +3,7 @@ import aiImg from '../../assets/ai-about.png';
 
 export const About = () => {
     return(
-        <section className={styles.About}>
+        <section id='about' className={styles.About}>
             <div className={styles.aiImageBox}><img src={aiImg} alt="ai-image" className={styles.aiImage}/></div>
             <div className={styles.aboutBox}>
                 <h1 className={styles.a1}>About me</h1>
