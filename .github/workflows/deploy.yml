@@ -1,8 +1,9 @@
-name: Deploy to Github Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      - main
 
   workflow_dispatch:
 
@@ -12,10 +13,11 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout Code
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -29,22 +31,14 @@ jobs:
       - name: Build React App
         run: npm run build
 
-      - name: Upload artifact
+      - name: upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          name: 'github-pages'
-          path: './build'
-          
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+         name: 'github-pages'
+         path: './build'
+
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
         with:
-         artifact_name: 'github-pages'
-         token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifact_name: 'github-pages'
