@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **full stack development**
 
-- 👨‍💻 All of my projects are available at [https://github.com/yashas-ravi/portfolio](https://github.com/yashas-ravi/portfolio)
+- 👨‍💻 All of my projects are available at [https://github.com/yashas-ravi/portfolio](https://github.com/yashas-ravi)
 
 - 📫 How to reach me **yashasravi03@gmail.com**
 
