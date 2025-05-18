@@ -15,4 +15,4 @@ const portfolio ={
     link:"https://github.com/yashas-ravi/portfolio",
     }
 
-export default {buildbox, portfolio};
+export {buildbox, portfolio};
