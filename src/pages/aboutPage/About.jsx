@@ -1,19 +1,16 @@
 import styles from './About.module.css';
-import aiImg from '../../assets/ai-about.png';
 
 export const About = () => {
     return(
         <section id='about' className={styles.About}>
-            <div className={styles.aiImageBox}><img src={aiImg} alt="ai-image" className={styles.aiImage}/></div>
             <div className={styles.aboutBox}>
-                <h1 className={styles.a1}>About me</h1>
                 <p>
-                    Hi, I'm <b>Yashas mr</b> studying computer science engineering at SJC institute of technology, chikkaballapur-562101, Karnataka.<br/> I'm very passionate about computer and technology since from very young age.<br/> I spend most of the time by working on projects. You can find my projects in next page. <br />feel free to contact me for any queries.<br /><br /> <b>Interests:</b> <br/>full stack web and app development <br />web3 <br />Ai and ml
+                Hi, I'm Yashas M.R<br></br><br></br>I'm currently pursuing a degree in Information Science and Engineering at SJC Institute of Technology, Chikkaballapur – 562101, Karnataka.<br></br><br></br>I've been passionate about computers and technology from a very young age. I spend most of my time working on exciting tech projects, constantly learning and experimenting with new tools and concepts.<br></br><br></br>You can explore some of my projects on the next page.<br></br><br></br>Feel free to reach out to me for any queries or collaborations!
+                </p>
+                <p>
+                <b>Interests:</b><br></br><br></br>full stack web and app development <br></br><br></br>web3 <br></br><br></br>Ai and ml
                 </p>
             </div>
-            <div className={styles.colorBox1}></div>
-            <div className={styles.colorBox2}></div>
-            <div className={styles.helloText}>Hello World Hello World Hello World Hello World hello world</div>
         </section>
     );
 }

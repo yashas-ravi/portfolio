@@ -1,34 +1,41 @@
-import React from "react";
+import { useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import styles from "./NavBar.module.css";
 
 export const NavBar = () => {
-    
 
-    const handleMenu = () => {
-        const menu = document.getElementById('menu');
-       
-        
-        if(menu.style.display === "flex"){
-            menu.style.display = "none";
+    const [sectionName, setSectionName] = useState("portfolio");
+
+    const handleSectionname=()=>{
+        const position = window.scrollY;
+        if(position>=0 && position<=500){
+            setSectionName("portfolio");
         }
-        else{
-            menu.style.display = "flex";
+        else if(position>=501 && position<=1100){
+            setSectionName("About");
+        }
+        else if(position>=1101 && position<=1800){
+            setSectionName("Skills");
+        }
+        else if(position>=1801 && position<=2600){
+            setSectionName("Projects");
+        }
+        else if(position>=2601){
+            setSectionName("Contact");
         }
     }
 
+    useEffect(()=>{
+        window.addEventListener('scroll', handleSectionname);
+    },[])
+    
 
     return <nav className = {styles.nav}>
+        <div className={styles.navContainer}>
         <img src={logo} alt="logo" className="img"/>
-            <ul id="menu" className = {styles.ul}>
-            <div className={styles.closeMenu}><i class="fa-solid fa-xmark" onClick={()=>handleMenu()}></i></div>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skill">Skills</a></li>
-                <li><a href="#project">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div className={styles.menuBtn}>
-             <i class="fa-solid fa-bars" onClick={()=>handleMenu()}></i>
-            </div>
+        <div className={styles.sectionName}>
+            <p id="demo">{sectionName}</p>
+        </div>
+        </div>
     </nav>
 };

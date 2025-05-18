@@ -1,114 +1,67 @@
 @import "/src/var.css";
 
-body{
-    margin: 0;
-    font-family: sans-serif;
-    position: relative;
-}
-
 .nav{
-    position:relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly ;
+    position: fixed;
+    top: 15px;
+    right: 0;
     width: 100%;
-    height: 100px;
-    z-index: 9;
-}
-
-.menuBtn{
- display: none;
-}
-
-.closeMenu{
-    display: none;
-}
-
-.nav ul{
-    width: 60%;
-    height: 100%;
-    z-index: 10;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    column-gap: 50px;
+    z-index: 999;
+}
+
+.navContainer{
+    background-color: rgba(255, 255, 255, 0.19);
+    box-shadow: 0px 0px 900px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    width: 90%;
+    height: 100%;
 }
 
 .nav img{
     width: 100px;
     height: 100px;
     cursor: pointer;
+    margin-left: 100px;
+    filter: drop-shadow(0px 0px 30px black);
 }
 
-.ul li{
-    list-style: none;
+.sectionName{
+    margin-right: 200px;
 }
 
-.ul li a{
-    text-decoration: none;
+.sectionName p{
+    color: var(--secondary-color);
     font-size: var(--medium-font);
-    font-weight: 500;
-    color: var(--accent-color);
-    padding: 10px;
-}
-
-.ul li a:active{
-    color: var(--white-text);
     font-weight: 600;
 }
 
 @media only screen and (max-width:470px){
 
-    .menuBtn{
-        display: block;
-        margin-right: 20px;
-    }
-
-    .menuBtn i{
-        font-size: 30px;
-        color: var(--accent-color);
-        cursor: pointer;
-    }
-
-    .closeMenu{
-        display: block;
-        transform: translate(70px);
-    }
-
-    .closeMenu i{
-        color: var(--accent-color);
-        font-size: var(--medium-font);
-        font-weight: 600;
-        cursor: pointer;
-    }
-
     .nav{
-        height: 80px;
-        justify-content: space-between;
-    }    
-    
-    .nav ul{
-        position: absolute;
-        top: 10px;
-        right: 1px;
-        width: 200px;
-        height: 300px;
-        z-index: 10;
-        display: none;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        padding: 20px;
-        row-gap: 20px;
-        background-color: rgba(36, 8, 46, 0.859);
-        border: 1px solid rgba(215, 201, 201, 0.477);
-        overflow: hidden;
+        height: 50px;
     }
     
     .nav img{
-        width: 80px;
-        height: 80px;
+        width: 50px;
+        height: 50px;
         margin-left: 10px;
-    } 
+        filter: none;
+    }
+    
+    .sectionName{
+        margin-right: 20px;
+    }
+
+    .sectionName p{
+        font-size: var(--small-font);
+    }
 }

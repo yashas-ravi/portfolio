@@ -1,5 +1,4 @@
 import styles from './Contact.module.css';
-import contactImg from '../../assets/contactImg.png'; 
 import config from '../../config';
 
 export const Contact = () => {
@@ -34,27 +33,14 @@ export const Contact = () => {
 
     return(
        <section id="contact" className={styles.contact}>
-         <div className={styles.colorBox7}></div>
-         <div className={styles.colorBox8}></div>
          <div className={styles.contactForm}>
-            <h2 className={styles.conText}>Contact me</h2>
+            <p>You have reached the end of the grid..  If you have anything to say mail me.</p>
             <form onSubmit={onSubmit} className={styles.formBox}>
                 <input type="text" name='name' placeholder='Your name' required />
                 <input type="email" name='email' placeholder='Your email' required />
                 <textarea name="message" placeholder='Enter message' required></textarea>
                 <button type='submit'>Send</button>
             </form>       
-         </div>
-         <div className={styles.socialBox}>
-            <div className={styles.contImgBox}>
-            <img src={contactImg} alt="Img" />
-            </div>
-            <h3>Let's connect</h3>
-            <div className={styles.socialApps}>
-                <a href="https://github.com/yashas-ravi"><i class="fa-brands fa-github"></i></a>
-                <a href="https://linkedin.com/in/yashas-mr-7b95471b5"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/yashas__mr"><i class="fa-brands fa-instagram"></i></a>
-            </div>
          </div>
        </section>
     )
