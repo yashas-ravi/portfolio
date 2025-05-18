@@ -25,7 +25,7 @@ export const Home = () => {
             </div>
         </div>
         <div className={styles.imgdiv}>
-            <img className={styles.heroImg} />
+            <img alt="" className={styles.heroImg} />
         </div>
     </section>
 };
