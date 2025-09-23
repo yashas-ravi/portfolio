@@ -3,7 +3,20 @@ import config from '../../config';
 
 export const Contact = () => {
 
+    window.addEventListener("load", () => {
+    if (window.location.hash) {
+      const el = document.querySelector(window.location.hash);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      } 
+    }
+     });
+
     const onSubmit = async(event)=>{
+        const btn = document.getElementById('submitBtn');
+        btn.disabled=true;
         event.preventDefault();
         const formData = new FormData(event.target);
         formData.append("access_key", config.web3forms);
@@ -29,6 +42,7 @@ export const Contact = () => {
                 console.log(res)
                 alert("message failed")
             }
+        btn.disabled=false;
     }
 
     return(
@@ -39,7 +53,7 @@ export const Contact = () => {
                 <input type="text" name='name' placeholder='Your name' required />
                 <input type="email" name='email' placeholder='Your email' required />
                 <textarea name="message" placeholder='Enter message' required></textarea>
-                <button type='submit'>Send</button>
+                <button id='submitBtn' type='submit'>Send</button>
             </form>       
          </div>
        </section>

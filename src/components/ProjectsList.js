@@ -1,5 +1,6 @@
 import buildboxImg from "../assets/buildbox.png";
 import logoImg from "../assets/logo.png";
+import chatImg from "../assets/chatbot.png";
 
 const buildbox ={
     title:"BuildBox",
@@ -15,4 +16,11 @@ const portfolio ={
     link:"https://github.com/yashas-ravi/portfolio",
     }
 
-export {buildbox, portfolio};
+const chatBot = {
+    title:"Chat Bot",
+    discription:"The Chatbot Application is an interactive communication platform designed to integrate user authentication, real-time chat functionality, and AI-powered responses.",
+    img:chatImg,
+    link:"https://github.com/yashas-ravi/chat-bot",
+}
+
+export {buildbox, portfolio, chatBot};

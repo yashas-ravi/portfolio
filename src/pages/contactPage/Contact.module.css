@@ -74,6 +74,11 @@
     border-radius: 50px;
 }
 
+.formBox button:disabled{
+    opacity: 20%;
+    cursor: progress;
+}
+
 @media only screen and (max-width:470px){
 
     .contact{
