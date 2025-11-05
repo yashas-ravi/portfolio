@@ -32,7 +32,8 @@ export const Home = () => {
         }
     );
 
-    const renderer = new THREE.WebGLRenderer({alpha:true});
+    const renderer = new THREE.WebGLRenderer({alpha:true, antialias:true});
+    renderer.setPixelRatio(window.devicePixelRatio); 
     renderer.setSize(modelContainer.clientWidth, modelContainer.clientHeight);
     modelContainer.appendChild(renderer.domElement);
     camera.position.z = 1;
