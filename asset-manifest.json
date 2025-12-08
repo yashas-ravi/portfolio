@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4629b59e.css",
-    "main.js": "/portfolio/static/js/main.ac455744.js",
+    "main.css": "/portfolio/static/css/main.60b28997.css",
+    "main.js": "/portfolio/static/js/main.ada08a08.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/cyborg-3d-model.glb": "/portfolio/static/media/cyborg-3d-model.b106a20138d05c08a903.glb",
     "static/media/buildbox.png": "/portfolio/static/media/buildbox.480001f5831ea1e18839.png",
     "static/media/chatbot.png": "/portfolio/static/media/chatbot.083a9e5fddf9f3038a78.png",
     "static/media/github-brands-solid.svg": "/portfolio/static/media/github-brands-solid.0bb8dda86ea78c71ff8b89db49a34c9c.svg",
     "static/media/instagram-brands-solid.svg": "/portfolio/static/media/instagram-brands-solid.fab9be49d308f2f38f7372c5f0b61180.svg",
     "index.html": "/portfolio/index.html",
     "static/media/linkedin-brands-solid.svg": "/portfolio/static/media/linkedin-brands-solid.d1ea32d745fdfc60dcddc1ad9ed14f87.svg",
-    "main.4629b59e.css.map": "/portfolio/static/css/main.4629b59e.css.map",
-    "main.ac455744.js.map": "/portfolio/static/js/main.ac455744.js.map",
+    "main.60b28997.css.map": "/portfolio/static/css/main.60b28997.css.map",
+    "main.ada08a08.js.map": "/portfolio/static/js/main.ada08a08.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4629b59e.css",
-    "static/js/main.ac455744.js"
+    "static/css/main.60b28997.css",
+    "static/js/main.ada08a08.js"
   ]
 }
