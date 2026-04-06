@@ -11,9 +11,9 @@ export const Home = () => {
             <div className={styles.text3}><h1>Hi! I'm Yashas mr</h1></div>
             <div className={styles.text4}><p>Student</p></div>
             <div className={styles.socialIcons}>
-            <img src={githubImg} alt="Github" />
-            <img src={linkedInImg} alt="Linkedin" />
-            <img src={instagramImg} alt="Instagram" />
+            <a href="https://github.com/yashas-ravi" target="_blank"><img src={githubImg} alt="Github" /></a>
+            <a href="https://www.linkedin.com/in/yashas-mr-7b95471b5" target="_blank"><img src={linkedInImg} alt="Linkedin" /></a>
+            <a href="https://www.instagram.com/yashas__mr" target="_blank"><img src={instagramImg} alt="Instagram" /></a>
             </div>
             <div className={styles.buttonBox}>
                <button className={styles.button}>
