@@ -128,11 +128,24 @@
 
     .Hero{
         flex-direction: column;
-        height: 90vh;
+        height: 100vh;
         padding: 150px 10px 10px 10px;
     }
 
+    .imageDiv{
+        width: auto;
+        height: 50%;
+        justify-content: center;
+    }
+
+   .imageDiv img{
+        width: 250px;
+        height: auto;
+    }
+
     .textdiv{
+        width: auto;
+        height: 50%;
         margin-left: 0px;
     }
     
