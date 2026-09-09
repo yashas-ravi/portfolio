@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -24,24 +23,21 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
+          cache: 'npm' # Speeds up builds by caching node_modules
 
       - name: Install Dependencies
         run: npm install
 
-      - name: Build React App
+      - name: Build SolidJS App
         run: npm run build
+        env:
+          VITE_WEB3FORMS: ${{ secrets.VITE_WEB3FORMS }} # Injects the secret during build
 
-      - name: update build in gh-Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-         publish_dir: ./build
-
-      - name: upload artifact
+      - name: Upload Artifact
         uses: actions/upload-pages-artifact@v3
         with:
-         name: 'github-pages'
-         path: './build'
+          name: 'github-pages'
+          path: './dist' # SolidJS/Vite outputs to 'dist', not 'build'
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
