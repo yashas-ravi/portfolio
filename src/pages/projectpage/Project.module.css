@@ -67,9 +67,24 @@
 
 .swiperContainer p{
     color: var(--black-text);
+    font-size: var(--very-small-font);
+    font-weight: 500;
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+}
+
+.projectLinks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.projectLinkSep{
+    color: rgb(from var(--secondary-color) r g b / 0.3);
     font-size: var(--small-font);
     font-weight: 500;
-    text-align: center;
 }
 
 .swiperContainer p p{

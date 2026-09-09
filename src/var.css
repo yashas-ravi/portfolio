@@ -8,6 +8,7 @@
     --bg-color: #F3F3F3;
 
     /* Sizes */
+    --very-small-font: 0.8em;
     --small-font: 1em;
     --medium-font: 1.3em; 
     --large-font: 2.5em;

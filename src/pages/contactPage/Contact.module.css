@@ -59,6 +59,11 @@
 
 .formBox textarea{
     height: 20vh;
+    width: 400px;
+    max-width: 400px;
+    max-height: 20vh;
+    min-width: 400px;
+    min-height: 20vh;
 }
 
 .formBox button{
@@ -107,6 +112,11 @@
     
     .formBox textarea{
         height: 20vh;
+        width: 200px;
+        max-width: 200px;
+        max-height: 20vh;
+        min-width: 200px;
+        min-height: 20vh;
     }
     
     .formBox button{

@@ -12,8 +12,22 @@
     padding: 100px 10px 10px 10px;
 }
 
+.imageDiv{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.imageDiv img{
+    width: 700px;
+    height: auto;
+    clip-path: circle(60% at 40% 40%);
+}
+
 .textdiv{
-    width: auto;
+    width: 50%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -33,7 +47,7 @@
     font-size:1.5em;
     background-color: var(--primary-color);
     border-radius: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .text2 p{
@@ -53,7 +67,7 @@
 .text4 p{
     color: var(--black-text);
     font-size: 1.8em;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 60px;
 }
 
@@ -96,20 +110,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    column-gap: 15px;
 }
 
 .buttonBox button a{
     font-size: var(--medium-font);
     font-weight: 600;
-    color: var(--gray-text);
+    color: var(--black-text);
     text-decoration: none;
 }
 
 .buttonBox button a:hover{
-    color: var(--primary-color);
+    column-gap: 10px;
+    color: var(--secondary-color);
 }
-
 
 @media only screen and (max-width:470px) {
 
